@@ -1,0 +1,17 @@
+[package]
+name = "{{ model_name }}"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+witness_generator = { path = "{{ witness_gen_path }}/witness_generator" }
+macro_utils = { path = "{{ witness_gen_path }}/macro_utils" }
+traits = { path = "{{ witness_gen_path }}/traits" }
+serde = { version = "1.0", features = ["derive"] }
+bnum = "0.12.1"
+serde_json = "1.0"
+bincode = "2.0"
+
+[[bin]]
+name = "precompute"
+path = "src/main.rs"

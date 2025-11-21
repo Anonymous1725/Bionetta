@@ -1,0 +1,24 @@
+# Directories
+.vscode/
+__pycache__/
+debug/
+target/
+
+# GitHub repo
+bionetta*
+mobile
+
+# Rust
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# Circom files
+*.sym
+*.r1cs
+*.wtns
+
+# Logs
+*.txt
+*.log
+*.json
